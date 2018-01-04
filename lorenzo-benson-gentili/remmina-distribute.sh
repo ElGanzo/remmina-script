@@ -8,8 +8,10 @@ do
 
 	for IP in $TUTTI_GLI_IP
 	do
-		sed "s/VM.remmina/VM-$IP.remmina/g" remoto.sh > /home/$user/Desktop/remoto-$IP.sh
-		sed "s/10.2.60.100/$IP/g" VM.remmina > VM-$IP.remmina
-		cp VM-$IP.remmina /home/$user/Desktop/
+		# cp remoto.sh /home/$user/Desktop/remoto-$IP.sh
+		# sed "s/VM.remmina/VM-$IP.remmina/g" remoto.sh > /home/$user/Desktop/remoto-$IP.sh
+		# sed "s/10.2.60.100/$IP/g" VM.remmina > VM-$IP.remmina
+
+		cp VM-$IP.remmina /home/$user/Desktop/ 
 	done
 done
